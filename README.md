@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Danasabe Ahmad**, Software Developer and Computer Science student in Sokoto, Nigeria.
 
-Live site: https://danasabeahmad.netlify.app
+Live site: https://danasabeahmad-portfolio.netlify.app
 
 ## Built with
 - HTML, CSS and vanilla JavaScript (no frameworks)
@@ -33,7 +33,7 @@ Open the folder in VS Code and start the **Live Server** extension. The contact 
 ## Update the site
 ```
 git add .
-git commit -m "Describe what you changed"
+git commit -m "Set site address"
 git push
 ```
 Netlify publishes the new version automatically within about a minute.
