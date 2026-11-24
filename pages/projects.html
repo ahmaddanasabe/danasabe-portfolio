@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Web Apps &amp; Academic Systems by Danasabe Ahmad</title>
+    <meta name="description" content="Explore Danasabe Ahmad's web development projects: academic systems, a client website, PHP and MySQL applications and student-focused software.">
+    <meta name="author" content="Danasabe Ahmad">
+    <meta name="theme-color" content="#080d12">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Replace YOUR-DOMAIN.com with your real domain before launch -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/pages/projects.html">
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Danasabe Ahmad">
+    <meta property="og:title" content="Projects | Web Apps &amp; Academic Systems by Danasabe Ahmad">
+    <meta property="og:description" content="Explore Danasabe Ahmad's web development projects: academic systems, a client website, PHP and MySQL applications and student-focused software.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/pages/projects.html">
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+
+    <!-- Theme (must come before the CSS) -->
+    <script src="../assets/js/theme-init.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="../index.html" class="logo" aria-label="Danasabe Ahmad home">
+            <span class="logo-mark">DA</span>
+            <span class="logo-name">Danasabe<span>.</span></span>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+
+            <button type="button" class="theme-toggle" id="themeToggle"
+                    aria-label="Switch to light theme" aria-pressed="false">
+                <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+
+            <a href="contact.html" class="nav-cta">Let's Talk <span aria-hidden="true">↗</span></a>
+
+            <button type="button" class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="projects.html" class="mobile-link active">Projects</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html" class="mobile-cta">Let's Talk <span aria-hidden="true">↗</span></a>
+    </div>
+
+</header>
+
+
+<main id="main">
+
+    <!-- PROJECTS HERO -->
+
+    <section class="projects-hero">
+
+        <div class="container">
+
+            <div class="section-intro">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i> My Work
+                </span>
+
+                <h1>
+                    Projects I've
+                    <span>Built &amp; Designed.</span>
+                </h1>
+
+                <p>
+                    A collection of real-world projects, academic systems, client work
+                    and software ideas focused on solving practical problems through
+                    technology.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT FILTER -->
+
+    <section class="project-filter-section">
+
+        <div class="container">
+
+            <div class="project-filters" role="group" aria-label="Filter projects">
+                <button type="button" class="project-filter active" data-filter="all">All</button>
+                <button type="button" class="project-filter" data-filter="web">Web Development</button>
+                <button type="button" class="project-filter" data-filter="academic">Academic</button>
+                <button type="button" class="project-filter" data-filter="client">Client Work</button>
+                <button type="button" class="project-filter" data-filter="concept">Concepts</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="projects-section">
+
+        <div class="container">
+
+            <div class="projects-grid" id="projectsGrid">
+
+            <article class="project-card" data-category="web academic">
+
+                <div class="project-image">
+                    <div class="project-placeholder waste-placeholder">
+                        <i class="fa-solid fa-recycle" aria-hidden="true"></i>
+                        <span>Management System</span>
+                    </div>
+                    <span class="project-status completed">Completed</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Web Application · PHP &amp; MySQL</div>
+
+                    <h2>Waste Management &amp; Monitoring System</h2>
+
+                    <p>A web-based system designed to support waste reporting, monitoring and management across Sokoto Metropolis, connecting residents and operational roles through a centralized platform.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> User authentication</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Waste reporting</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Role-based dashboards</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+
+
+                    <div class="project-links">
+                        <a href="contact.html" class="project-link"><i class="fa-solid fa-message" aria-hidden="true"></i> Ask about this project</a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- WHEN YOU HAVE THE CLIENT'S PERMISSION: add the client name, a screenshot and the live link (replace the placeholder block above with an image and add a project-link). -->
+            <article class="project-card" data-category="client web">
+
+                <div class="project-image">
+                    <div class="project-placeholder client-placeholder">
+                        <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        <span>Client Website</span>
+                    </div>
+                    <span class="project-status completed">Completed</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Client Work · Web Development</div>
+
+                    <h2>Responsive Client Website</h2>
+
+                    <p>A responsive website developed for a real client, focused on presenting information clearly, providing a professional online presence and delivering a mobile-friendly user experience. Client details and live link available on request.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Responsive design</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Mobile friendly</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Client-focused UI</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+
+                    <div class="project-links">
+                        <a href="contact.html" class="project-link"><i class="fa-solid fa-message" aria-hidden="true"></i> Ask about this project</a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="web">
+
+                <div class="project-image">
+                    <div class="project-placeholder portfolio-placeholder">
+                        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        <span>Portfolio Website</span>
+                    </div>
+                    <span class="project-status in-progress">Current</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Web Development · Personal</div>
+
+                    <h2>Developer Portfolio Website</h2>
+
+                    <p>A responsive developer portfolio built to showcase software development skills, real-world work, academic projects, services and professional experience.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Responsive UI</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Dark/light mode</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> SEO-ready structure</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+
+                    <div class="project-links">
+                        <a href="../index.html" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View Website</a>
+                        <a href="https://github.com/ahmaddanasabe" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="academic web">
+
+                <div class="project-image">
+                    <div class="project-placeholder cgpa-placeholder">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        <span>Academic System</span>
+                    </div>
+                    <span class="project-status in-progress">In Progress</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Academic · Web Application</div>
+
+                    <h2>Smart CGPA Calculator &amp; Academic Tracker</h2>
+
+                    <p>A student-focused academic tool designed to calculate CGPA using course credit units and help students track academic progress, target grades and degree performance.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> CGPA calculation</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Credit-unit tracking</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Academic forecasting</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="concept academic">
+
+                <div class="project-image">
+                    <div class="project-placeholder hub-placeholder">
+                        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        <span>Student Platform</span>
+                    </div>
+                    <span class="project-status concept">In Development</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Academic · PWA Concept</div>
+
+                    <h2>Course &amp; Departmental Material Hub</h2>
+
+                    <p>A student platform concept for organizing lecture materials, past questions, course outlines and timetable updates in one searchable and offline-friendly environment.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Offline-first design</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Material search</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Course organization</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PWA</span>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card" data-category="concept academic">
+
+                <div class="project-image">
+                    <div class="project-placeholder archive-placeholder">
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        <span>Research Platform</span>
+                    </div>
+                    <span class="project-status concept">Concept</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-category">Academic · Research Platform</div>
+
+                    <h2>Student Project Archive &amp; Research Index</h2>
+
+                    <p>A searchable platform concept for organizing student project titles, abstracts and research information to make previous academic work easier to discover and reduce duplicated project ideas.</p>
+
+                    <div class="project-features">
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Searchable archive</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Project indexing</span>
+                        <span><i class="fa-solid fa-check" aria-hidden="true"></i> Research discovery</span>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT CTA -->
+
+    <section class="projects-cta">
+
+        <div class="container">
+
+            <div class="projects-cta-inner">
+
+                <div>
+
+                    <span class="section-label">
+                        <i class="fa-solid fa-rocket" aria-hidden="true"></i> Have a project in mind?
+                    </span>
+
+                    <h2>Let's build something useful.</h2>
+
+                    <p>
+                        I'm open to building websites, web applications and practical
+                        software solutions for businesses, schools and organizations.
+                    </p>
+
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Start a Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo" aria-label="Danasabe Ahmad home">
+                    <span class="logo-mark">DA</span>
+                    <span class="logo-name">Danasabe<span>.</span></span>
+                </a>
+
+                <p>
+                    Software Developer &amp; Computer Science Student
+                    building practical digital solutions.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Navigation</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <h4>Connect</h4>
+
+                    <div class="social-links">
+
+                        <a href="mailto:ahmaddanasabe3@gmail.com">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+                        </a>
+
+                        <a href="https://wa.me/2349117903687" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                        </a>
+
+                        <a href="https://github.com/ahmaddanasabe" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/danasabe-ahmad" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear">2026</span> Danasabe Ahmad. All rights reserved.</p>
+            <p>Designed &amp; built with purpose.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button type="button" id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="../assets/js/script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Netlify settings. This is a plain HTML site, so there is nothing to build.
+[build]
+  publish = "."
+
+# Security and caching headers live in the _headers file.

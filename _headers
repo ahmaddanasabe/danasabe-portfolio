@@ -1,0 +1,24 @@
+# Security headers for Netlify or Cloudflare Pages (place this file in the ROOT folder).
+# GitHub Pages ignores this file. Vercel uses vercel.json instead.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://formspree.io https://api.web3forms.com; form-action 'self' https://formspree.io https://api.web3forms.com; frame-ancestors 'none'; base-uri 'self'
+
+# Images rarely change: cache for a year
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS: cache for 1 hour so your updates reach visitors quickly
+/assets/css/*
+  Cache-Control: public, max-age=3600
+/assets/js/*
+  Cache-Control: public, max-age=3600
+
+# Never cache the HTML pages for long, so updates show immediately
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
